@@ -1,16 +1,43 @@
-# React + Vite
+# GDG Kanban Task Manager 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, responsive Kanban-style task management application built for the **GDG on Campus SRM Technical Recruitments 2026**. This project features glassmorphism UI, dual-theme switching, and smooth drag-and-drop interactions.
 
-Currently, two official plugins are available:
+## ✨ Features
+* **Kanban Workflow:** Three distinct columns (Todo, In Progress, Done).
+* **Full CRUD:** Create, Read, Update (Edit), and Delete tasks.
+* **Drag & Drop:** Real-time task reordering using `@hello-pangea/dnd`.
+* **State Persistence:** Data remains intact after page refreshes via `LocalStorage`.
+* **Responsive Design:** Fully functional on mobile, tablet, and desktop.
+* **Dual-Theme Toggle:** Switch between "Digital Nomad" (Light) and "City Night" (Dark) modes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+* **Frontend:** React.js (Vite)
+* **Styling:** Tailwind CSS (Glassmorphism + Backdrop Blurs)
+* **State Management:** React Hooks (useState, useEffect)
+* **Icons & Utils:** UUID for unique task IDs
 
-## React Compiler
+## 📝 Development & Testing Process
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. Environment Setup
+* Scaffolded the project using Vite for optimal build speeds.
+* Integrated Tailwind CSS and configured the `content` paths for standard React components.
 
-## Expanding the ESLint configuration
+### 2. Core Logic Implementation
+* **Persistence:** Implemented a `useEffect` hook to synchronize the task state with the browser's `localStorage` whenever a change occurs.
+* **Drag and Drop:** Configured `DragDropContext` to handle cross-column movement and vertical reordering within the same column.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. Testing Workflow
+To ensure reliability, the following tests were performed:
+* **Task Lifecycle:** Verified that adding, editing, and deleting tasks updates the UI and LocalStorage instantly.
+* **State Integrity:** Confirmed that tasks remain in their respective columns after a hard browser refresh ($F5$).
+* **Responsiveness:** Tested layout transitions from `flex-row` (Desktop) to `flex-col` (Mobile) using Chrome DevTools.
+* **Theme Persistence:** Verified that the user's theme choice is remembered across sessions.
+
+## 🚀 Getting Started
+
+1. Clone the repository.
+2. Run `npm install`.
+3. Start the dev server with `npm run dev`.
+
+## 🌐 Live Link
+[https://gdg-kanban-board.vercel.app](https://gdg-kanban-board.vercel.app)
