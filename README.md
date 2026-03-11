@@ -41,3 +41,14 @@ To ensure reliability, the following tests were performed:
 
 ## 🌐 Live Link
 [https://gdg-kanban-board.vercel.app](https://gdg-kanban-board.vercel.app)
+## 📸 Screenshots
+
+### Desktop View
+| Light Mode (City Day) | Dark Mode (City Night) |
+| :---: | :---: |
+| ![Light Mode](./screenshots/city_day.png) | ![Dark Mode](./screenshots/city_night.png) |
+
+### Mobile Responsiveness
+| Mobile Light | Mobile Dark |
+| :---: | :---: |
+| ![Mobile Light](./screenshots/city_day_mobile.png) | ![Mobile Dark](./screenshots/city_night_mobile.png) |
